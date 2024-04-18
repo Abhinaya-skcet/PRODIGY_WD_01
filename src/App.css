@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.navbar.scrolled {
+  background-color: #333;
+  color: peru;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+.a{
+  padding-right:100px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: peru;
+}
+
+.section {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-gradient-square {
+  padding: 300px;
+  background: linear-gradient(135deg,	#2E3192 , #1BFFFF);
+}
+
+.blue-gradient {
+  padding: 300px;
+  background: radial-gradient(ellipse at top, #e66465, transparent),
+            radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+}
+.gradient {
+  padding: 300px;
+  background: conic-gradient(from 0.25turn at 50% 30%, #f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
+}
+
+.circle-gradient {
+  padding: 300px;
+  background: radial-gradient(#e66465, #9198e5);
+}
+
+.circle {
+  padding: 300px;
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+  color: #fff;
+}
